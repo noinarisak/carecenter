@@ -1,44 +1,62 @@
-# Care Center Project
+# Care Center Web Application
 
-_TODO_
+Care Center goal is to help individual connect with non-profit organizations and communities find services for their needs. This project was develop becase there was no solution for non-profits to collectively see other services in the Chicago metro and suburban areas. By aggergating services offering of non-profit organizations and communities we hope to close the gaps on the needs of the less fortunate. 
 
-One Paragraph of project description goes here
+## Getting Starteds
 
-## Getting Started (_TODO_)
+These instructions will get you a copy of the project up and running. You have a two options for development and testing purposes.
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+- Cloud Base: Cloud9.io
+- Local Machine: Using Vagrant
 
-### Prerequisites (_TODO_)
+### Prerequisites
 
-What things you need to install the software and how to install them
+You need the following dependencies are required to run the project, other project libraries are define in the [requirements.txt](requirements.txt).
 
+- pip
+- sqlite3
+- python 2.7.x
+- flask
+
+Manually
 ```
-Give examples
-```
-
-### Installing (_TODO_)
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
+pip flask requests flake8
 ```
 
-And repeat
+
+### Installing (*WIP*)
+
+A step by step series of examples that tell you how to get a development env running
+
+Once the dependencies have been installed you must then create `.env` base off [.env.sample](.env.sample) and update the file with the appropiate configurtation values.
+
+#### 1. OKTA Setup (*WIP*)
+
+[Setup Okta Developer Account and API Keys](SETUP_OKTA.md)
+
+#### 2.a. Development Option: Cloud9 (*WIP*)
 
 ```
-until finished
+pip install -r requirements.txt
+...
+python main.py (or setup Run Configuration on c9)
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+#### 2.b. Development Option: Local Machine (*WIP*)
 
-## Running the tests (_TODO_)
+```
+vagrant up
+...
+...
+...
+vagrant ssh
+```
+
+## Running the tests (*TODO*)
 
 Explain how to run the automated tests for this system
 
-### Break down into end to end tests (_TODO_)
+### Break down into end to end tests (*TODO*)
 
 Explain what these tests test and why
 
@@ -46,7 +64,7 @@ Explain what these tests test and why
 Give an example
 ```
 
-### And coding style tests (_TODO_)
+### And coding style tests (*TODO*)
 
 Explain what these tests test and why
 
@@ -54,17 +72,17 @@ Explain what these tests test and why
 Give an example
 ```
 
-## Deployment (_TODO_)
+## Deployment (*TODO*)
 
 Add additional notes about how to deploy this on a live system
 
-## Built With (_TODO_)
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+## Built With (*TODO*)
 
 * [Cloud9](https://cloud9.io) - Cloud IDE used for development
+* [Vagrant](https://www.vagrantup.com/) - Development environments made easy
+* [Python]() - 
+* [Okta Developer]() - OAuth, etc.
+* [Flask]() - A minimal web framework.
 
 ## Contributing
 
@@ -85,7 +103,7 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments (_TODO_)
+## Acknowledgments (*TODO*)
 
 * Hat tip to anyone who's code was used
 * Inspiration
